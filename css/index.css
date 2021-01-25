@@ -24,11 +24,10 @@
 }
 
 .section1 .navbar .title {
-  width: 12%;
-  background-color: #FFF4F0;
-  border: 1px  #FFF4F0 solid;
+  width: 40%;
   border-radius: 40px;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
   position: relative;
   z-index: 1;
 }
@@ -38,14 +37,20 @@
 }
 
 .section1 .navbar .title a span {
-  color: #C48222;
+  color: #893D1F;
   font-size: 40px;
   font-weight: 900;
 }
 
 @media screen and (max-width: 768px) {
   .section1 .navbar .title a span {
-    font-size: 30px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section1 .navbar .title a span {
+    font-size: 20px;
   }
 }
 
@@ -66,14 +71,20 @@
 
 .section1 .navbar .nav-list a span {
   color: #893D1F;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 @media screen and (max-width: 768px) {
   .section1 .navbar .nav-list a span {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  .section1 .navbar .nav-list a span {
+    font-size: 12px;
   }
 }
 
@@ -83,19 +94,16 @@
 }
 
 .section2 .shop-menu {
-  max-width: 100%;
-  font-family: Microsoft JhengHei;
-}
-
-.section2 .shop-menu img {
-  width: 100%;
+  min-width: 100%;
+  background-image: url("/img2/02.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
 }
 
 .section2 .shop-menu .menu-title {
   width: 15%;
-  position: absolute;
-  top: 120%;
-  left: 10%;
+  font-family: Microsoft JhengHei;
 }
 
 .section2 .shop-menu .menu-title .menu-line {
@@ -105,31 +113,28 @@
 
 .section2 .shop-menu .menu-title span {
   font-size: 40px;
+  font-weight: 900;
 }
 
-.section2 .menu-box {
+.section2 .shop-menu .menu-title #menu-font-size {
+  font-size: 32px;
+}
+
+.section2 .shop-menu .menu-box {
   width: 80%;
-  height: 30vh;
-  border: 1px black solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  height: 70vh;
+  background-color: yellow;
   margin: auto;
-  position: absolute;
-  top: 15%;
+  margin-top: 3%;
 }
 
-.section2 .menu-box .left-box {
-  width: 30%;
-  background-color: red;
-}
-
-.section2 .menu-box .right-box {
-  width: 70%;
+.section2 .shop-menu .menu-box .left-box {
+  width: 20%;
   background-color: green;
+}
+
+.section2 .shop-menu .menu-box .right-box {
+  width: 80%;
+  background-color: brown;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     box-sizing:border-box;
     padding:0;
@@ -18,21 +20,25 @@
         font-family: Microsoft JhengHei;
         // 店名
         .title {
-            width:12%;
-            background-color:#FFF4F0;
-            border:1px  #FFF4F0 solid;
+            width:40%;
+            // background-color:#FFF4F0;
+            // border:1px  #FFF4F0 solid;
             border-radius:40px;  
-            text-align:center;
+            text-align:left;
+            margin-left:20px;
             position:relative;
             z-index:1;
             a {
                 text-decoration: none;
                 span {
-                    color:#C48222;
-                    font-size:40px;
+                    color:#893D1F;
+                    font-size:$h1;
                     font-weight:900;
                     @media screen and (max-width:768px) {
-                        font-size:30px;
+                        font-size:$h4;
+                    }
+                    @media screen and (max-width:360px) {
+                        font-size:$h6;
                     }
                 }
             }
@@ -48,11 +54,14 @@
                 text-decoration: none;
                 span {
                     color:#893D1F;
-                    font-size:20px;
+                    font-size:$h5;
                     font-weight:600;
                     letter-spacing: 2px;
                     @media screen and (max-width:768px) {
-                        font-size:14px;
+                        font-size:$h7;
+                    }
+                    @media screen and (max-width:607px) {
+                        font-size:$h8;
                     }
                 }
             }
@@ -66,45 +75,44 @@
     width:100%;
     border:1px black solid;
     .shop-menu {
-        max-width:100%;
-        font-family: Microsoft JhengHei;
-        img {
-            width:100%;
-        }
+        min-width:100%;
+        // font-family: Microsoft JhengHei;
+        background-image: url('/img2/02.jpg');
+        background-size:cover;
+        background-position: center;
+        padding:150px;
         .menu-title {
             width:15%;
-            position:absolute;
-            top:120%;
-            left:10%;
+            font-family: Microsoft JhengHei;
             .menu-line {
                 width:60%;
                 border:1px green solid;
             }
             span {
-                font-size:40px;
+                font-size:$h1;
+                font-weight:900;
+            }
+            #menu-font-size {
+                font-size:$h3;
+            }
+        }
+
+        .menu-box {
+            width:80%;
+            height:70vh;
+            background-color:yellow;
+            margin:auto;
+            margin-top:3%;
+            .left-box {
+                width:20%;
+                background-color:green;
+            }
+            .right-box {
+                width:80%;
+                background-color:brown;
             }
         }
     }
 
-    // 寫到menu-box的部分
-    .menu-box {
-        width:80%;
-        height:30vh;
-        border:1px black solid;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: space-around;
-        margin:auto;
-        position:absolute;
-        top:15%;
-        .left-box {
-            width:30%;
-            background-color:red;
-        }
-        .right-box {
-            width:70%;
-            background-color:green;
-        }
-    }
 }
 
