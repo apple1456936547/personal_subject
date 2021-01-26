@@ -72,13 +72,12 @@
     width: 100%;
     border: 1px black solid;
     .shop-menu {
-        min-width: 100%;
+        width: 100%;
         background-image: url("/img2/02.jpg");
         background-size: cover;
-        background-position: center;
         padding: 105px;
         .menu-title {
-            widows: 95%;
+            width: 92%;
             font-family: Microsoft JhengHei;
             margin-top: 5%;
             margin-left: 0.5%;
@@ -89,73 +88,85 @@
             span {
                 font-size: $h1;
                 font-weight: 900;
+                @media screen and (max-width:768px) {
+                    font-size:$h3;
+                }
             }
             #menu-font-size {
                 font-size: $h5;
+                @media screen and (max-width:768px) {
+                    font-size:$h7;
+                }
             }
         }
 
         .menu-box {
-            width: 90%;
-            height: 60vh;
+            min-width: 94%;
             margin: auto;
             margin-top: 2%;
             margin-right: 10%;
+            background-color: yellow;
             display: flex;
             justify-content: space-around;
-            .left-box {
-                width: 43%;
-                overflow: hidden;
-                position: relative;
-
-                .left-box-menu {
-                    display: none;
-                }
-
-                .left-box-img {
-                    width: 100%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    clip-path: circle(50% at 50% 50%);
-                   
-                }
-                
+            @media screen and (max-width: 1697px) {
+                max-width: 100%;
             }
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap-reverse;
+            }
+            .left-box {
+                max-width: 40%;
+                background-color: brown;
+                position: relative;
+                @media screen and (max-width: 1697px) {
+                    max-width: 35%;
+                }
+                @media screen and (max-width: 1477px) {
+                    max-width: 40%;
+                }
+                @media screen and (max-width: 1080px) {
+                    max-width: 35%;
+                }
+                .left-box-img {
+                    position: relative;
+                    width: 100%;
 
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+
+                .left-box-img2 {
+                    position: absolute;
+                    width: 99%;
+                    right: 0.5%;
+                }
+            }
             .right-box {
-                width: 55%;
+                width: 58%;
+                background-color: aqua;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-content: space-between;
-                .food-box1 {
-                    width: 31%;
-                    height: 40%;
-                    overflow: hidden;
-                    position: relative;
-                    img {
-                        width: 100%;
-                        position: absolute;
-                        top: 100%;
-                        left: 100%;
-                        transform: translate(-100%, -100%);
-                        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+                .food-box {
+                    width: 270px;
+                    background-color: green;
+                    display: flex;
+                    flex-wrap: wrap;
+                    @media screen and (max-width: 1697px) {
+                        width: 230px;
                     }
-                }
-                .food-box2 {
-                    width: 31%;
-                    height: 40%;
-                    overflow: hidden;
-                    position: relative;
+
+                    @media screen and (max-width: 1080px) {
+                        width: 150px;
+                    }
+                    // @media screen and (max-width:768px) {
+                    //     width:100px;
+                    // }
                     img {
                         width: 100%;
-                        position: absolute;
-                        top: 100%;
-                        left: 100%;
-                        transform: translate(-100%, -100%);
-                        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
                     }
                 }
             }
