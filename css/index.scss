@@ -14,6 +14,7 @@
         height: 10%;
         background-color: rgba(249, 225, 184, 0.65);
         position: fixed;
+        z-index:999;
         bottom: 90%;
         display: flex;
         align-content: center;
@@ -70,12 +71,14 @@
 
 .section2 {
     width: 100%;
-    border: 1px black solid;
     .shop-menu {
         width: 100%;
         background-image: url("/img2/02.jpg");
         background-size: cover;
         padding: 105px;
+        @media screen and (max-width:399px) {
+            padding:80px;
+        }
         .menu-title {
             width: 92%;
             font-family: Microsoft JhengHei;
@@ -105,68 +108,121 @@
             margin: auto;
             margin-top: 2%;
             margin-right: 10%;
-            background-color: yellow;
             display: flex;
             justify-content: space-around;
             @media screen and (max-width: 1697px) {
-                max-width: 100%;
+                flex-direction: column;
+                min-width:80%;
             }
-            @media screen and (max-width: 768px) {
-                flex-wrap: wrap-reverse;
+            @media screen and (max-width:399px) {
+                min-width:100%;
             }
+        
             .left-box {
                 max-width: 40%;
-                background-color: brown;
                 position: relative;
-                @media screen and (max-width: 1697px) {
-                    max-width: 35%;
-                }
-                @media screen and (max-width: 1477px) {
-                    max-width: 40%;
-                }
-                @media screen and (max-width: 1080px) {
-                    max-width: 35%;
+                @media screen and (max-width: 768px) {
+                    max-width:60%;
                 }
                 .left-box-img {
                     position: relative;
                     width: 100%;
-
+                    @media screen and (max-width:1697px) {
+                        margin-left:75%;
+                    }
+                    @media screen and (max-width:768px) {
+                        margin-left:40%;
+                    }
                     &:hover {
                         opacity: 0;
                     }
+                   
                 }
-
                 .left-box-img2 {
                     position: absolute;
                     width: 99%;
                     right: 0.5%;
+                    @media screen and (max-width:1697px) {
+                        left:75%;
+                    }
+                    @media screen and (max-width: 798px) {
+                        left:75%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        left:40%;
+                    }
                 }
             }
             .right-box {
                 width: 58%;
-                background-color: aqua;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-content: space-between;
-
+                @media screen and (max-width: 1697px) {
+                    width:100%;
+                    margin-top:2%;
+                }
+                @media screen and (max-width: 768px) {
+                    max-width:120%;
+                }
                 .food-box {
                     width: 270px;
-                    background-color: green;
                     display: flex;
                     flex-wrap: wrap;
-                    @media screen and (max-width: 1697px) {
-                        width: 230px;
+                    @media screen and (max-width: 1099px) {
+                        width: 200px;
                     }
-
-                    @media screen and (max-width: 1080px) {
-                        width: 150px;
+                    @media screen and (max-width: 768px) {
+                        width: 120px;
                     }
-                    // @media screen and (max-width:768px) {
-                    //     width:100px;
-                    // }
+                    @media screen and (max-width: 547px) {
+                        width: 80px;
+                    }
                     img {
                         width: 100%;
+                    }
+                    .food1-pt1 {
+                        position: relative;
+                        width: 270px;
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                    .food1-pt2 {
+                        position: absolute;
+                        width: 270px;
+                    }
+                }
+                .food-box-bottom{
+                    @media screen and (max-width: 1697px) {
+                        margin-top:1%;
+                    }
+                }
+
+                .food3 {
+                    font-family: Microsoft JhengHei;
+                    font-weight:600;
+                    writing-mode: vertical-lr;
+                    display:flex;
+                    flex-direction: column;
+                    @media screen and (max-width:1697px) {
+                        display:none;
+                    }
+                    .food-text3 {
+                        margin-top:40%;
+                        font-size:$h2;
+                    }
+                    
+                    .food-text2 {
+                        font-size:$h6;
+                        margin-top:40%;
+                    }
+
+                    .food-text {
+                        margin-left:40%;
+                        margin-top:40%;
+                        font-size:$h6;
                     }
                 }
             }

@@ -14,6 +14,7 @@
   height: 10%;
   background-color: rgba(249, 225, 184, 0.65);
   position: fixed;
+  z-index: 999;
   bottom: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +91,6 @@
 
 .section2 {
   width: 100%;
-  border: 1px black solid;
 }
 
 .section2 .shop-menu {
@@ -98,6 +98,12 @@
   background-image: url("/img2/02.jpg");
   background-size: cover;
   padding: 105px;
+}
+
+@media screen and (max-width: 399px) {
+  .section2 .shop-menu {
+    padding: 80px;
+  }
 }
 
 .section2 .shop-menu .menu-title {
@@ -138,7 +144,6 @@
   margin: auto;
   margin-top: 2%;
   margin-right: 10%;
-  background-color: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,44 +153,46 @@
 
 @media screen and (max-width: 1697px) {
   .section2 .shop-menu .menu-box {
-    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 80%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 399px) {
   .section2 .shop-menu .menu-box {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    min-width: 100%;
   }
 }
 
 .section2 .shop-menu .menu-box .left-box {
   max-width: 40%;
-  background-color: brown;
   position: relative;
 }
 
-@media screen and (max-width: 1697px) {
+@media screen and (max-width: 768px) {
   .section2 .shop-menu .menu-box .left-box {
-    max-width: 35%;
-  }
-}
-
-@media screen and (max-width: 1477px) {
-  .section2 .shop-menu .menu-box .left-box {
-    max-width: 40%;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .section2 .shop-menu .menu-box .left-box {
-    max-width: 35%;
+    max-width: 60%;
   }
 }
 
 .section2 .shop-menu .menu-box .left-box .left-box-img {
   position: relative;
   width: 100%;
+}
+
+@media screen and (max-width: 1697px) {
+  .section2 .shop-menu .menu-box .left-box .left-box-img {
+    margin-left: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2 .shop-menu .menu-box .left-box .left-box-img {
+    margin-left: 40%;
+  }
 }
 
 .section2 .shop-menu .menu-box .left-box .left-box-img:hover {
@@ -198,9 +205,26 @@
   right: 0.5%;
 }
 
+@media screen and (max-width: 1697px) {
+  .section2 .shop-menu .menu-box .left-box .left-box-img2 {
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .section2 .shop-menu .menu-box .left-box .left-box-img2 {
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2 .shop-menu .menu-box .left-box .left-box-img2 {
+    left: 40%;
+  }
+}
+
 .section2 .shop-menu .menu-box .right-box {
   width: 58%;
-  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,9 +236,21 @@
       align-content: space-between;
 }
 
+@media screen and (max-width: 1697px) {
+  .section2 .shop-menu .menu-box .right-box {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2 .shop-menu .menu-box .right-box {
+    max-width: 120%;
+  }
+}
+
 .section2 .shop-menu .menu-box .right-box .food-box {
   width: 270px;
-  background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,19 +258,82 @@
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1697px) {
+@media screen and (max-width: 1099px) {
   .section2 .shop-menu .menu-box .right-box .food-box {
-    width: 230px;
+    width: 200px;
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .section2 .shop-menu .menu-box .right-box .food-box {
-    width: 150px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  .section2 .shop-menu .menu-box .right-box .food-box {
+    width: 80px;
   }
 }
 
 .section2 .shop-menu .menu-box .right-box .food-box img {
   width: 100%;
+}
+
+.section2 .shop-menu .menu-box .right-box .food-box .food1-pt1 {
+  position: relative;
+  width: 270px;
+}
+
+.section2 .shop-menu .menu-box .right-box .food-box .food1-pt1:hover {
+  opacity: 0;
+}
+
+.section2 .shop-menu .menu-box .right-box .food-box .food1-pt2 {
+  position: absolute;
+  width: 270px;
+}
+
+@media screen and (max-width: 1697px) {
+  .section2 .shop-menu .menu-box .right-box .food-box-bottom {
+    margin-top: 1%;
+  }
+}
+
+.section2 .shop-menu .menu-box .right-box .food3 {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1697px) {
+  .section2 .shop-menu .menu-box .right-box .food3 {
+    display: none;
+  }
+}
+
+.section2 .shop-menu .menu-box .right-box .food3 .food-text3 {
+  margin-top: 40%;
+  font-size: 36px;
+}
+
+.section2 .shop-menu .menu-box .right-box .food3 .food-text2 {
+  font-size: 20px;
+  margin-top: 40%;
+}
+
+.section2 .shop-menu .menu-box .right-box .food3 .food-text {
+  margin-left: 40%;
+  margin-top: 40%;
+  font-size: 20px;
 }
 /*# sourceMappingURL=index.css.map */
