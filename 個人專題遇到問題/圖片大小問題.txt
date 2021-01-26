@@ -1,0 +1,23 @@
+讓圖片的寬度或者高度等於容器的寬度或高度，多餘的裁掉，然後讓圖片居中：
+
+原文網址：https://kknews.cc/code/qga8v5y.html
+
+<style type="text/css"> 
+div{ width: 200px; 
+height: 200px; 
+overflow: hidden; 
+border: 2px solid red; 
+position: relative; } 
+img{ width: 100%; 
+position: absolute;
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%); } 
+</style> 
+<div>
+ <img src="1.png"> 
+</div> <br> <div> 
+<img src="1.jpg"> 
+</div>
+
+原文網址：https://kknews.cc/code/qga8v5y.html
