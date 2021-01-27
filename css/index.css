@@ -280,16 +280,16 @@
   width: 100%;
 }
 
-.section2 .shop-menu .menu-box .right-box .food-box .food1-pt1 {
+.section2 .shop-menu .menu-box .right-box .food-box .food-pt1 {
   position: relative;
   width: 270px;
 }
 
-.section2 .shop-menu .menu-box .right-box .food-box .food1-pt1:hover {
+.section2 .shop-menu .menu-box .right-box .food-box .food-pt1:hover {
   opacity: 0;
 }
 
-.section2 .shop-menu .menu-box .right-box .food-box .food1-pt2 {
+.section2 .shop-menu .menu-box .right-box .food-box .food-pt2 {
   position: absolute;
   width: 270px;
 }
@@ -335,5 +335,112 @@
   margin-left: 40%;
   margin-top: 40%;
   font-size: 20px;
+}
+
+.section3 {
+  width: 100%;
+}
+
+.section3 .news {
+  width: 100%;
+  background-image: url("/img2/03.jpg");
+  background-size: cover;
+  padding: 105px;
+}
+
+.section3 .news .news-title {
+  width: 92%;
+  font-family: Microsoft JhengHei;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.section3 .news .news-title .news-line {
+  width: 10%;
+  margin: auto;
+  border: 1px green solid;
+}
+
+.section3 .news .news-title span {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .section3 .news .news-title span {
+    font-size: 32px;
+  }
+}
+
+.section3 .news .news-title #news-font-size {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .section3 .news .news-title #news-font-size {
+    font-size: 16px;
+  }
+}
+
+.section3 .news .card-group {
+  width: 80%;
+  background-color: black;
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.section3 .news .card-group .card2,
+.section3 .news .card-group .card3 {
+  margin-left: 10px;
+}
+
+.section4 {
+  width: 100%;
+}
+
+.section4 .shop {
+  width: 100%;
+  background-image: url("/img2/04.jpg");
+  background-size: cover;
+  padding: 105px;
+}
+
+.section4 .shop .shop-title {
+  width: 92%;
+  font-family: Microsoft JhengHei;
+  margin-top: 5%;
+  margin-left: 0.5%;
+}
+
+.section4 .shop .shop-title .shop-line {
+  width: 10%;
+  border: 1px green solid;
+}
+
+.section4 .shop .shop-title span {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .section4 .shop .shop-title span {
+    font-size: 32px;
+  }
+}
+
+.section4 .shop .shop-title #shop-font-size {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .section4 .shop .shop-title #shop-font-size {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

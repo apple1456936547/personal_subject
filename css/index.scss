@@ -14,7 +14,7 @@
         height: 10%;
         background-color: rgba(249, 225, 184, 0.65);
         position: fixed;
-        z-index:999;
+        z-index: 999;
         bottom: 90%;
         display: flex;
         align-content: center;
@@ -76,8 +76,8 @@
         background-image: url("/img2/02.jpg");
         background-size: cover;
         padding: 105px;
-        @media screen and (max-width:399px) {
-            padding:80px;
+        @media screen and (max-width: 399px) {
+            padding: 80px;
         }
         .menu-title {
             width: 92%;
@@ -91,14 +91,14 @@
             span {
                 font-size: $h1;
                 font-weight: 900;
-                @media screen and (max-width:768px) {
-                    font-size:$h3;
+                @media screen and (max-width: 768px) {
+                    font-size: $h3;
                 }
             }
             #menu-font-size {
                 font-size: $h5;
-                @media screen and (max-width:768px) {
-                    font-size:$h7;
+                @media screen and (max-width: 768px) {
+                    font-size: $h7;
                 }
             }
         }
@@ -112,44 +112,43 @@
             justify-content: space-around;
             @media screen and (max-width: 1697px) {
                 flex-direction: column;
-                min-width:80%;
+                min-width: 80%;
             }
-            @media screen and (max-width:399px) {
-                min-width:100%;
+            @media screen and (max-width: 399px) {
+                min-width: 100%;
             }
-        
+
             .left-box {
                 max-width: 40%;
                 position: relative;
                 @media screen and (max-width: 768px) {
-                    max-width:60%;
+                    max-width: 60%;
                 }
                 .left-box-img {
                     position: relative;
                     width: 100%;
-                    @media screen and (max-width:1697px) {
-                        margin-left:75%;
+                    @media screen and (max-width: 1697px) {
+                        margin-left: 75%;
                     }
-                    @media screen and (max-width:768px) {
-                        margin-left:40%;
+                    @media screen and (max-width: 768px) {
+                        margin-left: 40%;
                     }
                     &:hover {
                         opacity: 0;
                     }
-                   
                 }
                 .left-box-img2 {
                     position: absolute;
                     width: 99%;
                     right: 0.5%;
-                    @media screen and (max-width:1697px) {
-                        left:75%;
+                    @media screen and (max-width: 1697px) {
+                        left: 75%;
                     }
                     @media screen and (max-width: 798px) {
-                        left:75%;
+                        left: 75%;
                     }
                     @media screen and (max-width: 768px) {
-                        left:40%;
+                        left: 40%;
                     }
                 }
             }
@@ -160,11 +159,11 @@
                 justify-content: space-around;
                 align-content: space-between;
                 @media screen and (max-width: 1697px) {
-                    width:100%;
-                    margin-top:2%;
+                    width: 100%;
+                    margin-top: 2%;
                 }
                 @media screen and (max-width: 768px) {
-                    max-width:120%;
+                    max-width: 120%;
                 }
                 .food-box {
                     width: 270px;
@@ -182,48 +181,129 @@
                     img {
                         width: 100%;
                     }
-                    .food1-pt1 {
+                    .food-pt1 {
                         position: relative;
                         width: 270px;
                         &:hover {
                             opacity: 0;
                         }
                     }
-                    .food1-pt2 {
+                    .food-pt2 {
                         position: absolute;
                         width: 270px;
                     }
                 }
-                .food-box-bottom{
+                .food-box-bottom {
                     @media screen and (max-width: 1697px) {
-                        margin-top:1%;
+                        margin-top: 1%;
                     }
                 }
 
                 .food3 {
                     font-family: Microsoft JhengHei;
-                    font-weight:600;
+                    font-weight: 600;
                     writing-mode: vertical-lr;
-                    display:flex;
+                    display: flex;
                     flex-direction: column;
-                    @media screen and (max-width:1697px) {
-                        display:none;
+                    @media screen and (max-width: 1697px) {
+                        display: none;
                     }
                     .food-text3 {
-                        margin-top:40%;
-                        font-size:$h2;
+                        margin-top: 40%;
+                        font-size: $h2;
                     }
-                    
+
                     .food-text2 {
-                        font-size:$h6;
-                        margin-top:40%;
+                        font-size: $h6;
+                        margin-top: 40%;
                     }
 
                     .food-text {
-                        margin-left:40%;
-                        margin-top:40%;
-                        font-size:$h6;
+                        margin-left: 40%;
+                        margin-top: 40%;
+                        font-size: $h6;
                     }
+                }
+            }
+        }
+    }
+}
+
+.section3 {
+    width: 100%;
+    .news {
+        width: 100%;
+        background-image: url("/img2/03.jpg");
+        background-size: cover;
+        padding: 105px;
+        .news-title {
+            width: 92%;
+            font-family: Microsoft JhengHei;
+            margin-top: 5%;
+            // margin-left: 0.5%
+            text-align: center;
+            .news-line {
+                width: 10%;
+                margin: auto;
+                border: 1px green solid;
+            }
+            span {
+                font-size: $h1;
+                font-weight: 900;
+                @media screen and (max-width: 768px) {
+                    font-size: $h3;
+                }
+            }
+            #news-font-size {
+                font-size: $h5;
+                @media screen and (max-width: 768px) {
+                    font-size: $h7;
+                }
+            }
+        }
+        .card-group {
+            width: 80%;
+            background-color: black;
+            border: 1px black solid;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 5%;
+            .card2,
+            .card3 {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.section4 {
+    width: 100%;
+    .shop {
+        width: 100%;
+        background-image: url("/img2/04.jpg");
+        background-size: cover;
+        padding: 105px;
+        .shop-title {
+            width: 92%;
+            font-family: Microsoft JhengHei;
+            margin-top: 5%;
+            margin-left: 0.5%;
+            .shop-line {
+                width: 10%;
+                border: 1px green solid;
+            }
+            span {
+                font-size: $h1;
+                font-weight: 900;
+                @media screen and (max-width: 768px) {
+                    font-size: $h3;
+                }
+            }
+            #shop-font-size {
+                font-size: $h5;
+                @media screen and (max-width: 768px) {
+                    font-size: $h7;
                 }
             }
         }
