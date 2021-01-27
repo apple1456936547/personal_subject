@@ -281,14 +281,16 @@
         width: 100%;
         background-image: url("/img2/04.jpg");
         background-size: cover;
-        padding: 105px;
+        padding: 130px;
         .shop-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            margin-top: 5%;
-            margin-left: 0.5%;
+            text-align:center;
+            margin-left: 3%;
+            padding-top:10%;
             .shop-line {
                 width: 10%;
+                margin:auto;
                 border: 1px green solid;
             }
             span {
@@ -299,6 +301,78 @@
                 }
             }
             #shop-font-size {
+                font-size: $h5;
+                @media screen and (max-width: 768px) {
+                    font-size: $h7;
+                }
+            }
+        }
+        .shop-box {
+            width:90%;
+            margin:auto;
+            margin-top:2%;
+            display:flex;
+            .shop-left {
+                width:20%;
+                display:flex;
+                flex-wrap:wrap;
+                align-content: space-around;
+                .shop-text {
+                    width:80%;
+                    background-color:pink;
+                    border:1px pink solid;
+                    border-radius: 50px;
+                    font-size:$h2;
+                    font-weight:900;
+                    font-family: Microsoft JhengHei;
+                    text-align:center;
+                    padding:5% 0;
+                    &:hover {
+                        color:rgb(235, 45, 45);
+                    }
+                }
+            }
+            .shop-right {
+                width:80%;
+                display:flex;
+                justify-content: space-around;
+                .shop-pt {
+                    width:32%;
+                    img {
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section5 {
+    width: 100%;
+    .about {
+        width: 100%;
+        background-image: url("/img2/05.jpg");
+        background-size: cover;
+        padding: 105px;
+        .about-title {
+            width: 92%;
+            font-family: Microsoft JhengHei;
+            margin-top: 3%;
+            margin-left:3%;
+            text-align: center;
+            .about-line {
+                width: 10%;
+                margin: auto;
+                border: 1px green solid;
+            }
+            span {
+                font-size: $h1;
+                font-weight: 900;
+                @media screen and (max-width: 768px) {
+                    font-size: $h3;
+                }
+            }
+            #about-font-size {
                 font-size: $h5;
                 @media screen and (max-width: 768px) {
                     font-size: $h7;
