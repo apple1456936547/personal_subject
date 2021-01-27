@@ -351,7 +351,8 @@
 .section3 .news .news-title {
   width: 92%;
   font-family: Microsoft JhengHei;
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
   text-align: center;
 }
 
@@ -384,8 +385,6 @@
 
 .section3 .news .card-group {
   width: 80%;
-  background-color: black;
-  border: 1px black solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

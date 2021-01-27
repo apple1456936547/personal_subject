@@ -239,8 +239,8 @@
         .news-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            margin-top: 5%;
-            // margin-left: 0.5%
+            margin-top: 3%;
+            margin-left:3%;
             text-align: center;
             .news-line {
                 width: 10%;
@@ -263,8 +263,6 @@
         }
         .card-group {
             width: 80%;
-            background-color: black;
-            border: 1px black solid;
             display: flex;
             justify-content: space-around;
             margin: auto;
