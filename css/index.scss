@@ -277,11 +277,12 @@
 
 .section4 {
     width: 100%;
+    
     .shop {
         width: 100%;
         background-image: url("/img2/04.jpg");
         background-size: cover;
-        padding: 130px;
+        padding-bottom:200px;
         .shop-title {
             width: 92%;
             font-family: Microsoft JhengHei;
@@ -353,16 +354,16 @@
         width: 100%;
         background-image: url("/img2/05.jpg");
         background-size: cover;
-        padding: 105px;
+        padding-bottom:200px;
         .about-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            margin-top: 3%;
-            margin-left:3%;
-            text-align: center;
+            padding-top:13%;
+            padding-right:10%;
+            text-align: right;
             .about-line {
                 width: 10%;
-                margin: auto;
+                margin-left:90%;
                 border: 1px green solid;
             }
             span {
@@ -379,5 +380,21 @@
                 }
             }
         }
+        .about-text {
+            width:35%;
+            margin-top:3%;
+            margin-left:48.5%;
+            line-height:40px;
+            font-weight:600;
+            font-family: Microsoft JhengHei;
+            li {
+                font-size:$h5;
+            }
+            p {
+                margin-top:1%;
+                font-size:$h6;
+            }
+        }
     }
+
 }

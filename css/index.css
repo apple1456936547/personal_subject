@@ -407,7 +407,7 @@
   width: 100%;
   background-image: url("/img2/04.jpg");
   background-size: cover;
-  padding: 130px;
+  padding-bottom: 200px;
 }
 
 .section4 .shop .shop-title {
@@ -506,20 +506,20 @@
   width: 100%;
   background-image: url("/img2/05.jpg");
   background-size: cover;
-  padding: 105px;
+  padding-bottom: 200px;
 }
 
 .section5 .about .about-title {
   width: 92%;
   font-family: Microsoft JhengHei;
-  margin-top: 3%;
-  margin-left: 3%;
-  text-align: center;
+  padding-top: 13%;
+  padding-right: 10%;
+  text-align: right;
 }
 
 .section5 .about .about-title .about-line {
   width: 10%;
-  margin: auto;
+  margin-left: 90%;
   border: 1px green solid;
 }
 
@@ -542,5 +542,23 @@
   .section5 .about .about-title #about-font-size {
     font-size: 16px;
   }
+}
+
+.section5 .about .about-text {
+  width: 35%;
+  margin-top: 3%;
+  margin-left: 48.5%;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: Microsoft JhengHei;
+}
+
+.section5 .about .about-text li {
+  font-size: 24px;
+}
+
+.section5 .about .about-text p {
+  margin-top: 1%;
+  font-size: 20px;
 }
 /*# sourceMappingURL=index.css.map */
