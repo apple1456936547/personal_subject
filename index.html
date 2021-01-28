@@ -79,7 +79,7 @@
                         </div>
                         <div class="food-box food3">
                             <div class="food-text">絕對讓你回味無窮</div>
-                            <div class="food-text2">來店必點餐點，</div>
+                            <div class="food-text2">來店必點餐點</div>
                             <div class="food-text3">人氣推薦</div>
                         </div>
                         <div class="food-box food4 food-box-bottom">
@@ -152,14 +152,14 @@
                     <span id="shop-font-size">SHOP</span>
                 </div>
                 <div class="shop-box">
-                    <div class="shop-left">
-                        <div class="shop-text">鍋物系列</div>
+                    <div class="shop-left ">
+                        <div class="shop-text hot-pot">鍋物系列</div>
                         <div class="shop-text">異國風味</div>
                         <div class="shop-text">中式料理</div>
                         <div class="shop-text">甜蜜滋味</div>
                     </div>
-                    <div class="shop-right">
-                        <div class="shop-pt">
+                    <div class="shop-right shopcard-group">
+                        <!-- <div class="shop-pt">
                             <img class="left-box-img" src="/img2/021.jpg">
                         </div>
                         <div class="shop-pt">
@@ -167,7 +167,7 @@
                         </div>
                         <div class="shop-pt">
                             <img class="left-box-img" src="/img2/021.jpg">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -184,7 +184,7 @@
                 <div class="about-text">
                     <li>理念的誕生</li>
                     <p>
-                        秉持著不殺生也能顧及健康的飲食方式，認為即使不食用肉類也可以從蔬果、穀類中獲取營養，不僅可以減少肉的碳排放量也可以達到健康的效果。
+                        秉持著健康的飲食方式，以蔬果主打為方向，希望能做出一道道安心吃飽卻對身體沒有負擔的料理。
                     </p>
                     <li>我們的任務(目標)</li>
                     <p>
@@ -215,6 +215,63 @@
 
     <script>
 
+        var shop_food = [
+            {
+                name: '一開始圖片1',
+                img: "img2/041.jpg",
+            },
+            {
+                name: '一開始圖片2',
+                img: "img2/042.jpg",
+            },
+            {
+                name: '一開始圖片3',
+                img: "img2/043.jpg",
+            }
+            // {
+            //     name:'鍋物1',
+            //     img:"img2/0411.jpg",
+            // },
+            // {
+            //     name:'鍋物2',
+            //     img:"img2/0412.jpg",
+            // },
+            // {
+            //     name:'鍋物3',
+            //     img:"img2/0413.jpg",
+            // },
+        ]
+
+        var area = document.querySelector(".shopcard-group")
+
+        var btn_hot_pot = document.querySelector(".hot-pot")
+        let hot = shop_food.filter(hot_text => hot_text.tag1 == 'hot-pot')
+
+        // 全部資料
+        shop_food.forEach(element => {
+            area.innerHTML +=
+                `<div class="shopcard">
+                <div class="img">
+                    <img src="${element.img}" alt="">
+                </div>
+            </div> `
+        })
+
+        // 鍋物系列按鈕
+        if (btn_hot_pot.onclick) {
+            console.log('123')
+            // btn_hot_pot.onclick = function () {
+            //     area.innerHTML = "" //不需要寫${} 如果只是要清空值沒必要多寫一個這個
+            //     drink.forEach(drink_text => {
+            //         area.innerHTML +=
+            //             `<div class="card">
+            //     <div class="img">
+            //         <img src="${drink_text.img}" alt="">
+            //         </div>
+            // </div> `
+            //     })
+            // }
+        }
 
 
     </script>

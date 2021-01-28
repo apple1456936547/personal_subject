@@ -235,11 +235,11 @@
         width: 100%;
         background-image: url("/img2/03.jpg");
         background-size: cover;
-        padding: 105px;
+        padding-bottom:200px;
         .news-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            margin-top: 3%;
+            padding-top:8%;
             margin-left:3%;
             text-align: center;
             .news-line {
@@ -320,8 +320,7 @@
                 align-content: space-around;
                 .shop-text {
                     width:80%;
-                    background-color:pink;
-                    border:1px pink solid;
+                    color:white;
                     border-radius: 50px;
                     font-size:$h2;
                     font-weight:900;
@@ -333,14 +332,22 @@
                     }
                 }
             }
-            .shop-right {
+            .shopcard-group {
                 width:80%;
+                background-color:gray;
+                border:1px black solid;
                 display:flex;
                 justify-content: space-around;
-                .shop-pt {
-                    width:32%;
-                    img {
-                        width:100%;
+                .shopcard {
+                    width:30%;
+                    background-color: green;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border: 1px black solid;
+                    .img {
+                        img {
+                            width:100%;
+                        }
                     }
                 }
             }

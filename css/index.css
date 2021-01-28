@@ -345,13 +345,13 @@
   width: 100%;
   background-image: url("/img2/03.jpg");
   background-size: cover;
-  padding: 105px;
+  padding-bottom: 200px;
 }
 
 .section3 .news .news-title {
   width: 92%;
   font-family: Microsoft JhengHei;
-  margin-top: 3%;
+  padding-top: 8%;
   margin-left: 3%;
   text-align: center;
 }
@@ -467,8 +467,7 @@
 
 .section4 .shop .shop-box .shop-left .shop-text {
   width: 80%;
-  background-color: pink;
-  border: 1px pink solid;
+  color: white;
   border-radius: 50px;
   font-size: 36px;
   font-weight: 900;
@@ -481,8 +480,10 @@
   color: #eb2d2d;
 }
 
-.section4 .shop .shop-box .shop-right {
+.section4 .shop .shop-box .shopcard-group {
   width: 80%;
+  background-color: gray;
+  border: 1px black solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,11 +491,18 @@
       justify-content: space-around;
 }
 
-.section4 .shop .shop-box .shop-right .shop-pt {
-  width: 32%;
+.section4 .shop .shop-box .shopcard-group .shopcard {
+  width: 30%;
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px black solid;
 }
 
-.section4 .shop .shop-box .shop-right .shop-pt img {
+.section4 .shop .shop-box .shopcard-group .shopcard .img img {
   width: 100%;
 }
 
