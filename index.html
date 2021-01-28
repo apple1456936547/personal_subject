@@ -198,11 +198,6 @@
 
     </main>
 
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -219,59 +214,68 @@
             {
                 name: '一開始圖片1',
                 img: "img2/041.jpg",
+                tag1: 'start',
             },
             {
                 name: '一開始圖片2',
                 img: "img2/042.jpg",
+                tag1: 'start',
             },
             {
                 name: '一開始圖片3',
                 img: "img2/043.jpg",
-            }
-            // {
-            //     name:'鍋物1',
-            //     img:"img2/0411.jpg",
-            // },
-            // {
-            //     name:'鍋物2',
-            //     img:"img2/0412.jpg",
-            // },
-            // {
-            //     name:'鍋物3',
-            //     img:"img2/0413.jpg",
-            // },
+                tag1: 'start',
+            },
+            {
+                name: '鍋物1',
+                img: "img2/0411.jpg",
+                tag1: 'hot-pot'
+            },
+            {
+                name: '鍋物2',
+                img: "img2/0412.jpg",
+                tag1: 'hot-pot'
+            },
+            {
+                name: '鍋物3',
+                img: "img2/0413.jpg",
+                tag1: 'hot-pot'
+            },
         ]
 
         var area = document.querySelector(".shopcard-group")
 
         var btn_hot_pot = document.querySelector(".hot-pot")
-        let hot = shop_food.filter(hot_text => hot_text.tag1 == 'hot-pot')
+        let hot_pot = shop_food.filter(hot_pot_text => hot_pot_text.tag1 == 'hot-pot')
 
-        // 全部資料
-        shop_food.forEach(element => {
-            area.innerHTML +=
-                `<div class="shopcard">
+
+        
+        function food_type(type) {
+            type.forEach(element => {
+                area.innerHTML +=
+                    `<div class="shopcard">
                 <div class="img">
                     <img src="${element.img}" alt="">
                 </div>
             </div> `
-        })
+            })
+        }
 
-        // 鍋物系列按鈕
-        if (btn_hot_pot.onclick) {
-            console.log('123')
-            // btn_hot_pot.onclick = function () {
-            //     area.innerHTML = "" //不需要寫${} 如果只是要清空值沒必要多寫一個這個
-            //     drink.forEach(drink_text => {
-            //         area.innerHTML +=
-            //             `<div class="card">
+
+        // // // 鍋物系列按鈕
+        btn_hot_pot.onclick = function () {
+            area.innerHTML = ""
+            food_type(hot_pot);
+            // hot_pot.forEach(hot_pot_text => {
+            //     area.innerHTML +=
+            //         `<div class="shopcard">
             //     <div class="img">
-            //         <img src="${drink_text.img}" alt="">
+            //         <img src="${hot_pot_text.img}" alt="">
             //         </div>
             // </div> `
-            //     })
-            // }
+            // })
         }
+
 
 
     </script>
