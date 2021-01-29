@@ -154,21 +154,11 @@
                 <div class="shop-box">
                     <div class="shop-left ">
                         <div class="shop-text hot-pot">鍋物系列</div>
-                        <div class="shop-text">異國風味</div>
-                        <div class="shop-text">中式料理</div>
-                        <div class="shop-text">甜蜜滋味</div>
+                        <div class="shop-text exotic">異國風味</div>
+                        <div class="shop-text chinese">中式料理</div>
+                        <div class="shop-text sweet">甜蜜滋味</div>
                     </div>
-                    <div class="shop-right shopcard-group">
-                        <!-- <div class="shop-pt">
-                            <img class="left-box-img" src="/img2/021.jpg">
-                        </div>
-                        <div class="shop-pt">
-                            <img class="left-box-img" src="/img2/021.jpg">
-                        </div>
-                        <div class="shop-pt">
-                            <img class="left-box-img" src="/img2/021.jpg">
-                        </div> -->
-                    </div>
+                    <div class="shop-right shopcard-group"></div>
                 </div>
 
         </section>
@@ -195,6 +185,35 @@
             </div>
         </section>
 
+         <!-- 關於我們 -->
+         <section class="section6">
+            <div class="store">
+                <div class="store-title">
+                    <span>門市資訊</span>
+                    <div class="store-line"></div>
+                    <span id="store-font-size">STORE</span>
+                </div>
+                <div class="store-content-box">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17342.26354478543!2d120.57907929745048!3d23.96886143630503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbe0a06e876203!2z56i75Zyw6JSs6aOf!5e0!3m2!1szh-TW!2stw!4v1611888627430!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="store-text">
+                        <div class="store-text-title">
+                            <span>稻地蔬食員林門市</span>
+                        </div>
+                        <div class="store-text-content">
+                            <div>營業時間：週一至週日｜中午12:00~20:30</div>
+                            <div>地址：510彰化縣員林市浮圳路二段398號</div>
+                            <div>訂購專線：0910899231</div>
+                            <div class="copyright">版權聲明：© Copyrights 2018 稻地蔬食 All rights reserved.</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+
 
     </main>
 
@@ -207,79 +226,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-
-    <script>
-
-        var shop_food = [
-            {
-                name: '一開始圖片1',
-                img: "img2/041.jpg",
-                tag1: 'start',
-            },
-            {
-                name: '一開始圖片2',
-                img: "img2/042.jpg",
-                tag1: 'start',
-            },
-            {
-                name: '一開始圖片3',
-                img: "img2/043.jpg",
-                tag1: 'start',
-            },
-            {
-                name: '鍋物1',
-                img: "img2/0411.jpg",
-                tag1: 'hot-pot'
-            },
-            {
-                name: '鍋物2',
-                img: "img2/0412.jpg",
-                tag1: 'hot-pot'
-            },
-            {
-                name: '鍋物3',
-                img: "img2/0413.jpg",
-                tag1: 'hot-pot'
-            },
-        ]
-
-        var area = document.querySelector(".shopcard-group")
-
-        var btn_hot_pot = document.querySelector(".hot-pot")
-        let hot_pot = shop_food.filter(hot_pot_text => hot_pot_text.tag1 == 'hot-pot')
-
-
-        
-        function food_type(type) {
-            type.forEach(element => {
-                area.innerHTML +=
-                    `<div class="shopcard">
-                <div class="img">
-                    <img src="${element.img}" alt="">
-                </div>
-            </div> `
-            })
-        }
-
-
-        // // // 鍋物系列按鈕
-        btn_hot_pot.onclick = function () {
-            area.innerHTML = ""
-            food_type(hot_pot);
-            // hot_pot.forEach(hot_pot_text => {
-            //     area.innerHTML +=
-            //         `<div class="shopcard">
-            //     <div class="img">
-            //         <img src="${hot_pot_text.img}" alt="">
-            //         </div>
-            // </div> `
-            // })
-        }
-
-
-
-    </script>
-
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

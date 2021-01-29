@@ -235,12 +235,12 @@
         width: 100%;
         background-image: url("/img2/03.jpg");
         background-size: cover;
-        padding-bottom:200px;
+        padding-bottom: 200px;
         .news-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            padding-top:8%;
-            margin-left:3%;
+            padding-top: 8%;
+            margin-left: 3%;
             text-align: center;
             .news-line {
                 width: 10%;
@@ -277,21 +277,21 @@
 
 .section4 {
     width: 100%;
-    
+
     .shop {
         width: 100%;
         background-image: url("/img2/04.jpg");
         background-size: cover;
-        padding-bottom:200px;
+        padding-bottom: 300px;
         .shop-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            text-align:center;
+            text-align: center;
             margin-left: 3%;
-            padding-top:10%;
+            padding-top: 10%;
             .shop-line {
                 width: 10%;
-                margin:auto;
+                margin: auto;
                 border: 1px green solid;
             }
             span {
@@ -309,44 +309,40 @@
             }
         }
         .shop-box {
-            width:90%;
-            margin:auto;
-            margin-top:2%;
-            display:flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 2%;
+            display: flex;
             .shop-left {
-                width:20%;
-                display:flex;
-                flex-wrap:wrap;
+                width: 20%;
+                display: flex;
+                flex-wrap: wrap;
                 align-content: space-around;
                 .shop-text {
-                    width:80%;
-                    color:white;
+                    width: 80%;
+                    color: white;
                     border-radius: 50px;
-                    font-size:$h2;
-                    font-weight:900;
+                    font-size: $h2;
+                    font-weight: 900;
                     font-family: Microsoft JhengHei;
-                    text-align:center;
-                    padding:5% 0;
+                    text-align: center;
+                    padding: 5% 0;
                     &:hover {
-                        color:rgb(235, 45, 45);
+                        color: rgb(235, 45, 45);
                     }
                 }
             }
             .shopcard-group {
-                width:80%;
-                background-color:gray;
-                border:1px black solid;
-                display:flex;
+                width: 80%;
+                display: flex;
                 justify-content: space-around;
                 .shopcard {
-                    width:30%;
-                    background-color: green;
+                    width: 30%;
                     display: flex;
                     flex-wrap: wrap;
-                    border: 1px black solid;
                     .img {
                         img {
-                            width:100%;
+                            width: 100%;
                         }
                     }
                 }
@@ -361,16 +357,16 @@
         width: 100%;
         background-image: url("/img2/05.jpg");
         background-size: cover;
-        padding-bottom:200px;
+        padding-bottom: 200px;
         .about-title {
             width: 92%;
             font-family: Microsoft JhengHei;
-            padding-top:13%;
-            padding-right:10%;
+            padding-top: 13%;
+            padding-right: 10%;
             text-align: right;
             .about-line {
                 width: 10%;
-                margin-left:90%;
+                margin-left: 90%;
                 border: 1px green solid;
             }
             span {
@@ -388,20 +384,88 @@
             }
         }
         .about-text {
-            width:35%;
-            margin-top:3%;
-            margin-left:48.5%;
-            line-height:40px;
-            font-weight:600;
+            width: 35%;
+            margin-top: 3%;
+            margin-left: 48.5%;
+            line-height: 40px;
+            font-weight: 600;
             font-family: Microsoft JhengHei;
             li {
-                font-size:$h5;
+                font-size: $h5;
             }
             p {
-                margin-top:1%;
-                font-size:$h6;
+                margin-top: 1%;
+                font-size: $h6;
             }
         }
     }
+}
 
+.section6 {
+    width: 100%;
+    .store {
+        width: 100%;
+        background-image: url("/img2/06.jpg");
+        background-size: cover;
+        padding-bottom: 200px;
+        .store-title {
+            width: 92%;
+            font-family: Microsoft JhengHei;
+            padding-top: 13%;
+            padding-right: 10%;
+            text-align: right;
+            .store-line {
+                width: 10%;
+                margin-left: 90%;
+                border: 1px green solid;
+            }
+            span {
+                font-size: $h1;
+                font-weight: 900;
+                @media screen and (max-width: 768px) {
+                    font-size: $h3;
+                }
+            }
+            #store-font-size {
+                font-size: $h5;
+                @media screen and (max-width: 768px) {
+                    font-size: $h7;
+                }
+            }
+        }
+
+        .store-content-box {
+            width: 65%;
+            background-color: pink;
+            border:1px black solid;
+            display:flex;
+            justify-content: space-around;
+            margin:auto;
+            margin-top:3%;
+            .map {
+                width: 40%;
+            }
+            .store-text {
+                width: 40%;
+                background-color: beige;
+                .store-text-title {
+                    font-size: $h5;
+                    font-family: Microsoft JhengHei;
+                    margin-top:50%;
+                    margin-left:25%;
+                }
+                .store-text-content {
+                    font-size: $h7;
+                    font-family: Microsoft JhengHei;
+                    margin-top:5%;
+                    margin-left:25%;
+                    .copyright {
+                        font-size: $h7;
+                        font-family: Microsoft JhengHei;
+                        margin-top:10%;
+                    }
+                }
+            }
+        }
+    }
 }

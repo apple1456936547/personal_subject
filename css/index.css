@@ -407,7 +407,7 @@
   width: 100%;
   background-image: url("/img2/04.jpg");
   background-size: cover;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 .section4 .shop .shop-title {
@@ -482,8 +482,6 @@
 
 .section4 .shop .shop-box .shopcard-group {
   width: 80%;
-  background-color: gray;
-  border: 1px black solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,13 +491,11 @@
 
 .section4 .shop .shop-box .shopcard-group .shopcard {
   width: 30%;
-  background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px black solid;
 }
 
 .section4 .shop .shop-box .shopcard-group .shopcard .img img {
@@ -568,5 +564,93 @@
 .section5 .about .about-text p {
   margin-top: 1%;
   font-size: 20px;
+}
+
+.section6 {
+  width: 100%;
+}
+
+.section6 .store {
+  width: 100%;
+  background-image: url("/img2/06.jpg");
+  background-size: cover;
+  padding-bottom: 200px;
+}
+
+.section6 .store .store-title {
+  width: 92%;
+  font-family: Microsoft JhengHei;
+  padding-top: 13%;
+  padding-right: 10%;
+  text-align: right;
+}
+
+.section6 .store .store-title .store-line {
+  width: 10%;
+  margin-left: 90%;
+  border: 1px green solid;
+}
+
+.section6 .store .store-title span {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .section6 .store .store-title span {
+    font-size: 32px;
+  }
+}
+
+.section6 .store .store-title #store-font-size {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .section6 .store .store-title #store-font-size {
+    font-size: 16px;
+  }
+}
+
+.section6 .store .store-content-box {
+  width: 65%;
+  background-color: pink;
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.section6 .store .store-content-box .map {
+  width: 40%;
+}
+
+.section6 .store .store-content-box .store-text {
+  width: 40%;
+  background-color: beige;
+}
+
+.section6 .store .store-content-box .store-text .store-text-title {
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  margin-top: 50%;
+  margin-left: 25%;
+}
+
+.section6 .store .store-content-box .store-text .store-text-content {
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.section6 .store .store-content-box .store-text .store-text-content .copyright {
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  margin-top: 10%;
 }
 /*# sourceMappingURL=index.css.map */
