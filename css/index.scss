@@ -382,12 +382,14 @@
         background-image: url("/img2/05.jpg");
         background-size: cover;
         padding-bottom: 200px;
+        
         .about-title {
             width: 92%;
             font-family: Microsoft JhengHei;
             padding-top: 13%;
             padding-right: 10%;
             text-align: right;
+           
             .about-line {
                 width: 10%;
                 margin-left: 90%;
@@ -396,6 +398,7 @@
             span {
                 font-size: $h1;
                 font-weight: 900;
+                
                 @media screen and (max-width: 768px) {
                     font-size: $h3;
                 }
@@ -414,12 +417,23 @@
             line-height: 40px;
             font-weight: 600;
             font-family: Microsoft JhengHei;
+            @media screen and (max-width:1158px) {
+                width:60%;
+                background-color:rgba(221, 198, 198, 0.5);
+                margin-left:22.5%;
+            }
             li {
                 font-size: $h5;
+                @media screen and (max-width:768px){
+                    font-size:$h4;
+                }
             }
             p {
                 margin-top: 1%;
                 font-size: $h6;
+                @media screen and (max-width:768px){
+                    font-size:$h5;
+                }
             }
         }
     }

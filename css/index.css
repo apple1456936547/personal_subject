@@ -562,13 +562,33 @@
   font-family: Microsoft JhengHei;
 }
 
+@media screen and (max-width: 1158px) {
+  .section5 .about .about-text {
+    width: 60%;
+    background-color: rgba(221, 198, 198, 0.5);
+    margin-left: 22.5%;
+  }
+}
+
 .section5 .about .about-text li {
   font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .section5 .about .about-text li {
+    font-size: 28px;
+  }
 }
 
 .section5 .about .about-text p {
   margin-top: 1%;
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .section5 .about .about-text p {
+    font-size: 24px;
+  }
 }
 
 .section6 {
