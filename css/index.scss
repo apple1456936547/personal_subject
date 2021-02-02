@@ -310,13 +310,16 @@
             }
             .card {
                 .card-body {
-                    .card-title, .card-text {
+                    .card-title, .card-text, .card-date {
                         font-family: Microsoft JhengHei;
-                        font-size:$h4;
+                        font-size:$h5;
                     }
                     .card-title {
                         font-size:$h3;
                         font-weight:600;
+                    }
+                    .card-date {
+                        font-size:$h6;
                     }
                 }
             }

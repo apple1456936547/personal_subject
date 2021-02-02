@@ -479,14 +479,18 @@
   }
 }
 
-.section4 .news .card-group .card .card-body .card-title, .section4 .news .card-group .card .card-body .card-text {
+.section4 .news .card-group .card .card-body .card-title, .section4 .news .card-group .card .card-body .card-text, .section4 .news .card-group .card .card-body .card-date {
   font-family: Microsoft JhengHei;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .section4 .news .card-group .card .card-body .card-title {
   font-size: 32px;
   font-weight: 600;
+}
+
+.section4 .news .card-group .card .card-body .card-date {
+  font-size: 20px;
 }
 
 .section4 .news .card-group .card2, .section4 .news .card-group .card3 {
