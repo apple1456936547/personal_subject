@@ -3,6 +3,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .section1 {
@@ -24,6 +25,28 @@
 
 .section1 .navbar .collapse .navbar-nav {
   margin-right: 1%;
+}
+
+.top {
+  text-decoration: none;
+  text-align: center;
+  width: 300px;
+  color: #ec4a4a;
+  font-size: 40px;
+  font-weight: 600;
+  position: fixed;
+  z-index: 999;
+  top: 70%;
+  left: 85%;
+}
+
+.top:hover {
+  color: #6b0a1a;
+}
+
+.top .top-text {
+  font-size: 28px;
+  text-decoration: none;
 }
 
 .section2 {
@@ -264,7 +287,8 @@
   font-size: 20px;
 }
 
-.section2 .shop-menu .menu-box .right-box .food4, .section2 .shop-menu .menu-box .right-box .food5 {
+.section2 .shop-menu .menu-box .right-box .food4,
+.section2 .shop-menu .menu-box .right-box .food5 {
   margin-top: 1%;
 }
 
@@ -479,7 +503,9 @@
   }
 }
 
-.section4 .news .card-group .card .card-body .card-title, .section4 .news .card-group .card .card-body .card-text, .section4 .news .card-group .card .card-body .card-date {
+.section4 .news .card-group .card .card-body .card-title,
+.section4 .news .card-group .card .card-body .card-text,
+.section4 .news .card-group .card .card-body .card-date {
   font-family: Microsoft JhengHei;
   font-size: 24px;
 }
@@ -493,12 +519,14 @@
   font-size: 20px;
 }
 
-.section4 .news .card-group .card2, .section4 .news .card-group .card3 {
+.section4 .news .card-group .card2,
+.section4 .news .card-group .card3 {
   margin-left: 1%;
 }
 
 @media screen and (max-width: 964px) {
-  .section4 .news .card-group .card2, .section4 .news .card-group .card3 {
+  .section4 .news .card-group .card2,
+  .section4 .news .card-group .card3 {
     margin-top: 6%;
   }
 }

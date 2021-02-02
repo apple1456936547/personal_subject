@@ -4,27 +4,50 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .section1 {
     width: 100%;
-    @media screen and (max-width:500px){
-        margin-top:15%;
+    @media screen and (max-width: 500px) {
+        margin-top: 15%;
     }
     .navbar {
         .navbar-brand {
-            color:rgb(196, 130, 34);
-            font-size:$h1;
-            font-weight:600;
-            margin-left:1%;
+            color: rgb(196, 130, 34);
+            font-size: $h1;
+            font-weight: 600;
+            margin-left: 1%;
         }
         .collapse {
             .navbar-nav {
-                margin-right:1%;
+                margin-right: 1%;
             }
         }
     }
+    
 }
+
+.top {
+    text-decoration: none;
+    text-align:center;
+    width: 300px;
+    color: rgb(236, 74, 74);
+    font-size: $h1;
+    font-weight: 600;
+    position: fixed;
+    z-index: 999;
+    top:70%;
+    left: 85%;
+    &:hover {
+        color:rgb(107, 10, 26);
+    }
+    .top-text {
+        font-size: $h4;
+        text-decoration: none;
+    }
+}
+
 
 .section2 {
     width: 100%;
@@ -39,7 +62,7 @@
             margin-top: 5%;
             margin-left: 0.5%;
             @media screen and (max-width: 1201px) {
-                text-align:center;
+                text-align: center;
             }
             span {
                 font-size: $h1;
@@ -63,26 +86,26 @@
             display: flex;
             justify-content: space-around;
             @media screen and (max-width: 1201px) {
-                flex-direction:column;
+                flex-direction: column;
             }
             @media screen and (max-width: 560px) {
-                width:100%;
+                width: 100%;
             }
             .left-box {
                 width: 600px;
                 position: relative;
-                display:flex;
+                display: flex;
                 @media screen and (max-width: 1201px) {
-                    align-self:center;
+                    align-self: center;
                 }
-                @media screen and (max-width:790px) {
-                    max-width:90%;
+                @media screen and (max-width: 790px) {
+                    max-width: 90%;
                 }
-                @media screen and (max-width:600px) {
-                    max-width:100%;
+                @media screen and (max-width: 600px) {
+                    max-width: 100%;
                 }
-                @media screen and (max-width:515px) {
-                    max-width:300px;
+                @media screen and (max-width: 515px) {
+                    max-width: 300px;
                 }
                 .left-box-img {
                     position: relative;
@@ -105,7 +128,7 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: space-between;
-                margin:auto;
+                margin: auto;
                 @media screen and (max-width: 1201px) {
                     max-width: 100%;
                 }
@@ -116,31 +139,31 @@
                     @media screen and (max-width: 1310px) {
                         max-width: 40%;
                         justify-content: center;
-                        margin-top:1%;
+                        margin-top: 1%;
                     }
                     @media screen and (max-width: 875px) {
                         max-width: 80%;
                     }
                     @media screen and (max-width: 560px) {
-                        max-width:60%;
+                        max-width: 60%;
                     }
                     img {
                         width: 100%;
                     }
                     .food-pt1 {
                         position: relative;
-                        width:300px;
+                        width: 300px;
                         &:hover {
                             opacity: 0;
                         }
                     }
                     .food-pt2 {
                         position: absolute;
-                        width:300px;
+                        width: 300px;
                     }
                 }
                 .food-box-bottom {
-                    color:black;
+                    color: black;
                 }
 
                 .food3 {
@@ -149,10 +172,10 @@
                     writing-mode: vertical-lr;
                     display: flex;
                     flex-direction: column;
-                    @media screen and (max-width:1860px) {
-                        display:none;
+                    @media screen and (max-width: 1860px) {
+                        display: none;
                     }
-                    
+
                     .food-text3 {
                         margin-top: 20%;
                         font-size: $h2;
@@ -160,18 +183,17 @@
                     .food-text2 {
                         font-size: $h6;
                         margin-top: 20%;
-                      
                     }
 
                     .food-text {
                         margin-left: 40%;
                         margin-top: 20%;
                         font-size: $h6;
-                        
                     }
                 }
-                .food4, .food5 {
-                    margin-top:1%;
+                .food4,
+                .food5 {
+                    margin-top: 1%;
                 }
             }
         }
@@ -211,16 +233,16 @@
             margin: auto;
             margin-top: 2%;
             display: flex;
-            @media screen and (max-width:999px) {
-                flex-direction:column;
+            @media screen and (max-width: 999px) {
+                flex-direction: column;
             }
             .shop-left {
                 width: 20%;
                 display: flex;
                 flex-wrap: wrap;
                 align-content: space-around;
-                @media screen and (max-width:999px) {
-                    width:100%;
+                @media screen and (max-width: 999px) {
+                    width: 100%;
                     justify-content: center;
                 }
                 .shop-text {
@@ -232,11 +254,11 @@
                     font-family: Microsoft JhengHei;
                     text-align: center;
                     padding: 5% 0;
-                    @media screen and (max-width:999px) {
-                        width:40%;
+                    @media screen and (max-width: 999px) {
+                        width: 40%;
                     }
-                    @media screen and (max-width:999px) {
-                        font-size:$h4;
+                    @media screen and (max-width: 999px) {
+                        font-size: $h4;
                     }
                     &:hover {
                         color: rgb(235, 45, 45);
@@ -247,18 +269,18 @@
                 width: 80%;
                 display: flex;
                 justify-content: space-around;
-                @media screen and (max-width:999px) {
-                    width:100%;
+                @media screen and (max-width: 999px) {
+                    width: 100%;
                 }
-                @media screen and (max-width:763px) {
-                    flex-direction:column;
+                @media screen and (max-width: 763px) {
+                    flex-direction: column;
                 }
                 .shopcard {
                     width: 30%;
                     display: flex;
                     flex-wrap: wrap;
-                    @media screen and (max-width:763px) {
-                        width:100%;
+                    @media screen and (max-width: 763px) {
+                        width: 100%;
                     }
                     .img {
                         img {
@@ -304,30 +326,33 @@
             justify-content: space-around;
             margin: auto;
             margin-top: 5%;
-            @media screen and (max-width:964px){
-                display:flex;
-                flex-direction:column;
+            @media screen and (max-width: 964px) {
+                display: flex;
+                flex-direction: column;
             }
             .card {
                 .card-body {
-                    .card-title, .card-text, .card-date {
+                    .card-title,
+                    .card-text,
+                    .card-date {
                         font-family: Microsoft JhengHei;
-                        font-size:$h5;
+                        font-size: $h5;
                     }
                     .card-title {
-                        font-size:$h3;
-                        font-weight:600;
+                        font-size: $h3;
+                        font-weight: 600;
                     }
                     .card-date {
-                        font-size:$h6;
+                        font-size: $h6;
                     }
                 }
             }
-           
-            .card2, .card3 {
-                margin-left:1%;
-                @media screen and (max-width:964px){
-                    margin-top:6%;
+
+            .card2,
+            .card3 {
+                margin-left: 1%;
+                @media screen and (max-width: 964px) {
+                    margin-top: 6%;
                 }
             }
         }
@@ -341,29 +366,29 @@
         background-image: url("/img/05.jpg");
         background-size: cover;
         padding-bottom: 200px;
-        
+
         .about-title {
             width: 92%;
             font-family: Microsoft JhengHei;
             padding-top: 13%;
             padding-right: 10%;
             text-align: right;
-            @media screen and (max-width:768px){
-                margin-left:13%;
-                text-align:center;
+            @media screen and (max-width: 768px) {
+                margin-left: 13%;
+                text-align: center;
             }
-            @media screen and (max-width:360px){
-                text-align:center;
+            @media screen and (max-width: 360px) {
+                text-align: center;
             }
             span {
                 font-size: $h1;
                 font-weight: 900;
-                
+
                 @media screen and (max-width: 768px) {
                     font-size: $h5;
                 }
-                @media screen and (max-width:360px){
-                    text-align:center
+                @media screen and (max-width: 360px) {
+                    text-align: center;
                 }
             }
             #about-font-size {
@@ -380,29 +405,29 @@
             line-height: 40px;
             font-weight: 600;
             font-family: Microsoft JhengHei;
-            @media screen and (max-width:1158px) {
-                width:60%;
-                background-color:rgba(221, 198, 198, 0.5);
-                margin-left:22.5%;
+            @media screen and (max-width: 1158px) {
+                width: 60%;
+                background-color: rgba(221, 198, 198, 0.5);
+                margin-left: 22.5%;
             }
-            @media screen and (max-width:768px){
-                width:90%;
-                margin-left:0%;
-                margin:auto;
+            @media screen and (max-width: 768px) {
+                width: 90%;
+                margin-left: 0%;
+                margin: auto;
             }
             li {
                 font-size: $h5;
-                @media screen and (max-width:768px){
+                @media screen and (max-width: 768px) {
                     // font-size:$h5;
-                    font-size:$h7;
+                    font-size: $h7;
                 }
             }
             p {
                 margin-top: 1%;
                 font-size: $h6;
-                @media screen and (max-width:768px){
+                @media screen and (max-width: 768px) {
                     // font-size:$h6;
-                    font-size:$h7;
+                    font-size: $h7;
                 }
             }
         }
@@ -416,49 +441,48 @@
         background-image: url("/img/06.jpg");
         background-size: cover;
         padding-bottom: 300px;
-        border:1px rgb(185, 163, 102) solid;
+        border: 1px rgb(185, 163, 102) solid;
         .store-content-box {
             width: 65%;
-            margin:auto;
-            display:flex;
+            margin: auto;
+            display: flex;
             justify-content: space-around;
-            margin-top:15%;
-            @media screen and (max-width:1067px) {
-                flex-direction:column-reverse;
+            margin-top: 15%;
+            @media screen and (max-width: 1067px) {
+                flex-direction: column-reverse;
             }
             .map {
                 width: 60%;
-                margin:auto;
-                @media screen and (max-width:1067px) {
-                    width:100%;
+                margin: auto;
+                @media screen and (max-width: 1067px) {
+                    width: 100%;
                 }
             }
             .store-text {
                 width: 40%;
-                @media screen and (max-width:1067px) {
-                    width:100%;
+                @media screen and (max-width: 1067px) {
+                    width: 100%;
                 }
                 .store-title {
                     width: 92%;
                     font-family: Microsoft JhengHei;
                     padding-right: 10%;
                     text-align: right;
-                    margin-left:15%;
-                    @media screen and (max-width:768px) {
-                        margin-left:11%;
-                        text-align:center;
+                    margin-left: 15%;
+                    @media screen and (max-width: 768px) {
+                        margin-left: 11%;
+                        text-align: center;
                     }
                     span {
                         font-size: $h1;
                         font-weight: 900;
                         @media screen and (max-width: 768px) {
                             font-size: $h5;
-                            text-align:center;
+                            text-align: center;
                         }
-                        
                     }
                     #store-font-size {
-                        font-size:$h5;
+                        font-size: $h5;
                         @media screen and (max-width: 768px) {
                             font-size: $h8;
                         }
@@ -467,48 +491,48 @@
                 .store-text-title {
                     font-size: $h5;
                     font-family: Microsoft JhengHei;
-                    margin-left:8%;
-                    margin-top:25%;
-                    @media screen and (max-width:1067px) {
-                        margin-top:0%;
+                    margin-left: 8%;
+                    margin-top: 25%;
+                    @media screen and (max-width: 1067px) {
+                        margin-top: 0%;
                     }
-                    @media screen and (max-width:1067px) {
-                        font-size:$h7;
+                    @media screen and (max-width: 1067px) {
+                        font-size: $h7;
                     }
-                    @media screen and (max-width:768px) {
-                        text-align:center;
-                        margin-top:2%;
-                        margin-left:0%;
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                        margin-top: 2%;
+                        margin-left: 0%;
                     }
                 }
                 .store-text-content {
                     font-size: $h7;
                     font-family: Microsoft JhengHei;
-                    margin-left:8%;
-                    margin-top:10%; 
-                    font-weight:600;
-                    @media screen and (max-width:1067px) {
-                        margin-top:0;
+                    margin-left: 8%;
+                    margin-top: 10%;
+                    font-weight: 600;
+                    @media screen and (max-width: 1067px) {
+                        margin-top: 0;
                     }
-                    @media screen and (max-width:1067px) {
-                        font-size:$h8;
+                    @media screen and (max-width: 1067px) {
+                        font-size: $h8;
                     }
-                    @media screen and (max-width:768px) {
-                        text-align:center;
-                        margin-left:0%;
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                        margin-left: 0%;
                     }
                     .copyright {
                         font-size: $h7;
                         font-family: Microsoft JhengHei;
-                        margin-top:10%;
-                        @media screen and (max-width:1067px) {
-                            padding-bottom:3%;
+                        margin-top: 10%;
+                        @media screen and (max-width: 1067px) {
+                            padding-bottom: 3%;
                         }
-                        @media screen and (max-width:1067px) {
-                            font-size:$h8;
+                        @media screen and (max-width: 1067px) {
+                            font-size: $h8;
                         }
-                        @media screen and (max-width:768px) {
-                            text-align:center;
+                        @media screen and (max-width: 768px) {
+                            text-align: center;
                         }
                     }
                 }
