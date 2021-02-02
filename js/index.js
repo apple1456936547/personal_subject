@@ -2,17 +2,17 @@
 var start_img = [
     {
         name: '一開始圖片1',
-        img: "img2/041.jpg",
+        img: "img/041.jpg",
         tag1: 'start',
     },
     {
         name: '一開始圖片2',
-        img: "img2/042.jpg",
+        img: "img/042.jpg",
         tag1: 'start',
     },
     {
         name: '一開始圖片3',
-        img: "img2/043.jpg",
+        img: "img/043.jpg",
         tag1: 'start',
     }
 ]
@@ -20,62 +20,62 @@ var start_img = [
 var shop_food = [
     {
         name: '鍋物1',
-        img: "img2/0411.jpg",
+        img: "img/0411.jpg",
         tag1: 'hot-pot'
     },
     {
         name: '鍋物2',
-        img: "img2/0412.jpg",
+        img: "img/0412.jpg",
         tag1: 'hot-pot'
     },
     {
         name: '鍋物3',
-        img: "img2/0413.jpg",
+        img: "img/0413.jpg",
         tag1: 'hot-pot'
     },
     {
         name: '異國1',
-        img: "img2/0421.jpg",
+        img: "img/0421.jpg",
         tag1: 'exotic'
     },
     {
         name: '異國2',
-        img: "img2/0422.jpg",
+        img: "img/0422.jpg",
         tag1: 'exotic'
     },
     {
         name: '異國3',
-        img: "img2/0423.jpg",
+        img: "img/0423.jpg",
         tag1: 'exotic'
     },
     {
         name: '中式1',
-        img: "img2/0431.jpg",
+        img: "img/0431.jpg",
         tag1: 'chinese'
     },
     {
         name: '中式2',
-        img: "img2/0432.jpg",
+        img: "img/0432.jpg",
         tag1: 'chinese'
     },
     {
         name: '中式3',
-        img: "img2/0433.jpg",
+        img: "img/0433.jpg",
         tag1: 'chinese'
     },
     {
         name: '甜點1',
-        img: "img2/0441.jpg",
+        img: "img/0441.jpg",
         tag1: 'sweet'
     },
     {
         name: '甜點2',
-        img: "img2/0442.jpg",
+        img: "img/0442.jpg",
         tag1: 'sweet'
     },
     {
         name: '甜點3',
-        img: "img2/0443.jpg",
+        img: "img/0443.jpg",
         tag1: 'sweet'
     },
 ]

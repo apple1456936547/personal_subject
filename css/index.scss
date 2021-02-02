@@ -30,7 +30,7 @@
     width: 100%;
     .shop-menu {
         width: 100%;
-        background-image: url("/img2/02.jpg");
+        background-image: url("/img/02.jpg");
         background-size: cover;
         padding: 105px;
         .menu-title {
@@ -154,21 +154,24 @@
                     }
                     
                     .food-text3 {
-                        margin-top: 40%;
+                        margin-top: 20%;
                         font-size: $h2;
                     }
                     .food-text2 {
                         font-size: $h6;
-                        margin-top: 40%;
+                        margin-top: 20%;
                       
                     }
 
                     .food-text {
                         margin-left: 40%;
-                        margin-top: 40%;
+                        margin-top: 20%;
                         font-size: $h6;
                         
                     }
+                }
+                .food4, .food5 {
+                    margin-top:1%;
                 }
             }
         }
@@ -177,57 +180,10 @@
 
 .section3 {
     width: 100%;
-    .news {
-        width: 100%;
-        background-image: url("/img2/03.jpg");
-        background-size: cover;
-        padding-bottom: 300px;
-        .news-title {
-            width: 92%;
-            font-family: Microsoft JhengHei;
-            padding-top: 8%;
-            margin-left: 3%;
-            text-align: center;
-            span {
-                font-size: $h1;
-                font-weight: 900;
-                @media screen and (max-width: 768px) {
-                    font-size: $h5;
-                }
-            }
-            #news-font-size {
-                font-size: $h5;
-                @media screen and (max-width: 768px) {
-                    font-size: $h7;
-                }
-            }
-        }
-        .card-group {
-            width: 80%;
-            display: flex;
-            justify-content: space-around;
-            margin: auto;
-            margin-top: 5%;
-            @media screen and (max-width:964px){
-                display:flex;
-                flex-direction:column;
-            }
-           
-            .card2, .card3 {
-                @media screen and (max-width:964px){
-                    margin-top:6%;
-                }
-            }
-        }
-    }
-}
-
-.section4 {
-    width: 100%;
 
     .shop {
         width: 100%;
-        background-image: url("/img2/04.jpg");
+        background-image: url("/img/04.jpg");
         background-size: cover;
         padding-bottom: 300px;
         .shop-title {
@@ -315,11 +271,71 @@
     }
 }
 
+.section4 {
+    width: 100%;
+    .news {
+        width: 100%;
+        background-image: url("/img/03.jpg");
+        background-size: cover;
+        padding-bottom: 200px;
+        .news-title {
+            width: 92%;
+            font-family: Microsoft JhengHei;
+            padding-top: 8%;
+            margin-left: 3%;
+            text-align: center;
+            span {
+                font-size: $h1;
+                font-weight: 900;
+                @media screen and (max-width: 768px) {
+                    font-size: $h5;
+                }
+            }
+            #news-font-size {
+                font-size: $h5;
+                @media screen and (max-width: 768px) {
+                    font-size: $h7;
+                }
+            }
+        }
+        .card-group {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 5%;
+            @media screen and (max-width:964px){
+                display:flex;
+                flex-direction:column;
+            }
+            .card {
+                .card-body {
+                    .card-title, .card-text {
+                        font-family: Microsoft JhengHei;
+                        font-size:$h4;
+                    }
+                    .card-title {
+                        font-size:$h3;
+                        font-weight:600;
+                    }
+                }
+            }
+           
+            .card2, .card3 {
+                margin-left:1%;
+                @media screen and (max-width:964px){
+                    margin-top:6%;
+                }
+            }
+        }
+    }
+}
+
 .section5 {
     width: 100%;
     .about {
         width: 100%;
-        background-image: url("/img2/05.jpg");
+        background-image: url("/img/05.jpg");
         background-size: cover;
         padding-bottom: 200px;
         
@@ -394,7 +410,7 @@
     width: 100%;
     .store {
         width: 100%;
-        background-image: url("/img2/06.jpg");
+        background-image: url("/img/06.jpg");
         background-size: cover;
         padding-bottom: 300px;
         border:1px rgb(185, 163, 102) solid;
@@ -467,6 +483,7 @@
                     font-family: Microsoft JhengHei;
                     margin-left:8%;
                     margin-top:10%; 
+                    font-weight:600;
                     @media screen and (max-width:1067px) {
                         margin-top:0;
                     }
