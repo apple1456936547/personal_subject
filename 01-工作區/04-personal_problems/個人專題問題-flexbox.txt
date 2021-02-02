@@ -1,0 +1,5 @@
+flexbox：
+
+align-self:移動單個物件
+align-items：移動多個物件
+align-content:移動很多行
